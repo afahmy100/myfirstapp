@@ -15,7 +15,7 @@ spec:
       containers:
       - name: spring-boot-app
         #image: 431147460194.dkr.ecr.us-east-2.amazonaws.com/springboot:latest
-        image: localhost:5000/springboot:latest
+        image: image-registry.openshift-image-registry.svc:5000/openshift/springboot:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
